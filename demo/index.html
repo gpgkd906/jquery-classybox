@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>jQuery ClassyBox plugin | Class.PM</title>
+        <link rel="stylesheet" media="screen" href="css/documentation.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/jquery.classybox.js"></script>
+        <script src="js/jwplayer.js"></script>
+        <script src="js/jwplayer.html5.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/jquery.classybox.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div class="container_6 clearfix">
+                    <h1 class="grid_6">jQuery ClassyBox</h1>
+                </div>
+            </header>
+            <section>
+                <div class="container_6 clearfix">
+                    <section class="main-section grid_6">
+                        <div class="main-content">
+                            <header>
+                                <h2>Overview</h2>
+                            </header>
+                            <section class="clearfix">
+                                <div>
+                                    <p><a href="http://www.class.pm/projects/jquery/classybox">ClassyBox</a> is a <a href="http://www.jquery.com">jQuery</a> plugin written by <a href="http://www.class.pm">Marius Stanciu - Sergiu</a>, a plugin that is a complex jQuery LightBox alternative with support for the most popular video services, enabling you to embed a media gallery on your site.</p>
+                                    <ul>
+                                        <li>Embeds Photo Galleries.</li>
+                                        <li>Support for video.</li>
+                                        <li>Responsive layout.</li>
+                                        <li>Social Media buttons - Facebook, Twitter and Google+ - redirect link to ClassyBox window.</li>
+                                        <li>Button to set original size.</li>
+                                        <li>Possibility to add preloader for photo galleries.</li>
+                                        <li>Possibility to add an image to player.</li>
+                                        <li>AJAX support.</li>
+                                        <li>Possibility to show adds on top of the content.</li>
+                                        <li>Keyboard support.</li>
+                                        <li>Easy to change the appearance via CSS.</li>
+                                        <li>Support for YouTube, VIMEO, DailyMotion, 5min, MetaCafe, Ustream, Hell TV, VEVO and MySpace.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+                <div class="container_6 clearfix">
+                    <section class="main-section grid_6">
+                        <div class="main-content">
+                            <header>
+                                <h2>Instructions</h2>
+                            </header>
+                            <section class="clearfix">
+                                <div>
+<p>First you need to include the jQuery library, since ClassyBox is a plugin. You can download it from the <a href="http://www.jquery.com">jQuery website</a> or link it directly from the Google CDN.</p>
+<pre>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;
+</pre>
+<p>Secondly, you need to include the jQuery ClassyBox javascript, the css file and the required JWPlayer dependencies into your page. You can do it by adding the code below to your page.</p>
+<pre>
+&lt;script src="js/jquery.classybox.js"&gt;&lt;/script&gt;
+&lt;script src="js/jwplayer.js"&gt;&lt;/script&gt;
+&lt;script src="js/jwplayer.html5.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="css/jquery.classybox.css" /&gt;
+</pre>
+<p>Next, you implement the structure on which you want to trigger the classybox.</p>
+<pre>
+&lt;a class="lightbox" href="images/demo/1.jpg" title="First Image"&gt;
+    &lt;img src="images/demo/1_tb.jpg" alt="This is a longer description" /&gt;
+&lt;/a&gt;
+</pre>
+<p>As the last step, you trigger the <em>ClassyBox()</em> function on the element you just created. In this case, we trigger it on the element with the class <em>lightbox</em>. We can also use the old LightBox-compatible syntax, so you don't need to alter your website code.</p>
+<pre>
+$(".lightbox").ClassyBox({
+    widthWindow: : 900
+});
+
+$("a[rel^=lightbox]").ClassyBox({
+    widthWindow: : 900
+});
+</pre>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+                <div class="container_6 clearfix">
+                    <section class="main-section grid_6">
+                        <div class="main-content">
+                            <header>
+                                <h2>Options</h2>
+                            </header>
+                            <section class="clearfix">
+                                <div>
+                                    <p><em><strong>height</strong></em> - height of the classybox window.</p>
+                                    <p><em><strong>width</strong></em> - width of the classybox window.</p>
+                                    <p><em><strong>iframe</strong></em> - pull the contents via an iframe.</p>
+                                    <p><em><strong>inline</strong></em> - pull the contents inline from the DOM.</p>
+                                    <p><em><strong>ajax</strong></em> - pull the contents via an AJAX request.</p>
+                                    <p><em><strong>social</strong></em> - should the plugin display social media links?</p>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+                <div class="container_6 clearfix">
+                    <section class="main-section grid_6">
+                        <div class="main-content">
+                            <header>
+                                <h2>Demo</h2>
+                            </header>
+                            <section class="clearfix">
+                                <div style="text-align: center">
+                                    <h1>Image Gallery</h1>
+                                    <div class="gallery">
+                                        <a href="images/demo/1.jpg" title="First Image">
+                                            <img src="images/demo/1_tb.jpg" alt="This is a longer description" />
+                                        </a>
+                                        <a href="images/demo/2.jpg" title="Second Image">
+                                            <img src="images/demo/2_tb.jpg" alt="This is a longer description" />
+                                        </a>
+                                        <a href="images/demo/3.jpg" title="Third Image">
+                                            <img src="images/demo/3_tb.jpg" alt="This is a longer description" />
+                                        </a>
+                                        <a href="images/demo/4.jpg" title="Fourth Image">
+                                            <img src="images/demo/4_tb.jpg" alt="This is a longer description" />
+                                        </a>
+                                        <a href="images/demo/5.jpg" title="Fifth Image">
+                                            <img src="images/demo/5_tb.jpg" alt="This is a longer description" />
+                                        </a>
+                                        <a href="images/demo/6.jpg" title="Sixth Image">
+                                            <img src="images/demo/6_tb.jpg" alt="This is a longer description" />
+                                        </a>	
+                                    </div> 
+                                    <h1>Youtube</h1>  
+                                    <div class="video"> 
+                                        <a href="http://www.youtube.com/watch?v=N7OPZOBJZyI" title="DJ Fresh ft. Rita Ora - Hot Right Now"><img src="images/demo/youtube1.jpg" alt="" /></a> 
+                                        <a href="http://www.youtube.com/watch?v=YVw7eJ0vGfM" title="David Guetta - Turn Me On ft. Nicki Minaj"><img src="images/demo/youtube2.jpg" alt="" /></a>   
+                                    </div>	
+                                    <h1>Other:</h1>
+                                    <div class="other">
+                                        <a id="frame" href="http://google.com">Iframe</a> 
+                                        <a id="ajax" href="ajax.txt">Ajax</a>
+                                        <a id="daily" href="http://www.dailymotion.com/video/xq1luq_norah-jones-happy-pills_music">DailyMotion</a>
+                                        <a id="five" href="http://www.5min.com/Video/Mystery-Guitar-Mans-Street-Performance-517284226">5min</a>
+                                        <a id="vimeo" href="http://www.vimeo.com/12848379">Vimeo</a>
+                                        <a id="metacafe" href="http://www.metacafe.com/watch/9364362/interview_with_two_door_cinema_club/">Metacafe</a>
+                                        <a id="ustream" href="http://www.ustream.tv/recorded/26838314">Ustream</a>
+                                        <a id="hell" href="http://www.hell.tv/t/videos/12504/delightfully-sensual.html">Hell TV</a>
+                                        <a id="vevo" href="http://www.vevo.com/watch/coldplay/paradise/GB0401100185">VEVO</a>
+                                        <a id="myspace" href="http://pl.myspace.com/video/alexey-shcheglov/alex-shcheglov-rush/108558854">MySpace</a>
+                                    </div>
+                                    <script>
+                                        $(document).ready(function() {
+                                            $(".gallery a").ClassyBox({
+                                                ads: "ads.html"
+                                            });
+                                            $(".player a").ClassyBox();
+                                            $(".video a").ClassyBox({
+                                                width: 900,
+                                                title: 0
+                                            });
+                                            $("#frame").ClassyBox({
+                                                iframe: 1,
+                                                social: 0,
+                                                height: 600,
+                                                width: 900
+                                            });
+                                            $("#ajax").ClassyBox({
+                                                height: 450,
+                                                width: 555,
+                                                ajaxSuccess: function(data) {
+                                                    $(".classybox-wrap .content").append(data);
+                                                }
+                                            });
+                                            $('a[href*="vimeo"], a[href*="vevo"], a[href*="dailymotion"], a[href*="5min"], a[href*="ustream"], a[href*="metacafe"], a[href*="hell"], a[href*="myspace"]').ClassyBox({
+                                                height: 500,
+                                                width: 850
+                                            });
+                                            $(window).ClassyBox({
+                                                autoDetect: 1
+                                            });
+                                        });
+                                    </script>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-30825160-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </body>
+</html>

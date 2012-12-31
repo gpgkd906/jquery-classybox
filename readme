@@ -1,0 +1,20 @@
+This plugin is a complex jQuery LightBox alternative with support for the most popular video services, enabling you to embed a media gallery on your site.
+
+- Embeds Photo Galleries.
+- Support for video.
+- Responsive.
+- Social Media buttons - Facebook, Twitter and Google+ - redirect link to ClassyBox window.
+- Button to set original size.
+- Possibility to add preloader for photo galleries.
+- Possibility to add an image to player.
+- Possibility to show adds on top of the content.
+- AJAX support.
+- Keyboard support.
+- Easy to change the appearance via CSS.
+- Support for YouTube, VIMEO, DailyMotion, 5min, MetaCafe, Ustream, Hell TV, VEVO and MySpace.
+
+@name ClassyBox
+@package jQuery plugin
+@author Marius Stanciu - Sergiu <marius@picozu.net>
+@website http://www.class.pm/projects/jquery/classybox
+@version 1.1.0
