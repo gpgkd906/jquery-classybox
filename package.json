@@ -1,0 +1,28 @@
+{
+	"name": "classybox",
+	"title": "jQuery ClassyBox",
+	"description": "This plugin is a complex jQuery LightBox alternative with support for the most popular video services, enabling you to embed a media gallery on your site.",
+	"keywords": [
+		"box",
+		"effects",
+		"lightbox"
+	],
+	"version": "1.1.1",
+	"author": {
+		"name": "Marius Stanciu - Sergiu",
+		"url": "http://www.class.pm"
+	},
+	"licenses": [
+		{
+			"type": "GPLv3",
+			"url": "http://www.gnu.org/licenses/gpl-3.0.txt"
+		}
+	],
+	"bugs": "https://github.com/classpm/jquery-classybox/issues",
+	"homepage": "http://www.class.pm/projects/jquery/classybox/",
+	"docs": "http://www.class.pm/projects/jquery/classybox/",
+	"download": "https://github.com/classpm/jquery-classybox/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=1.6"
+	}
+}

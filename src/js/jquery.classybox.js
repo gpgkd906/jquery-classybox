@@ -3,9 +3,9 @@
  * http://www.class.pm/projects/jquery/classybox
  *
  * Copyright 2012 - 2013, Class.PM www.class.pm
- * Written by Marius Stanciu - Sergiu <marius@picozu.net>
+ * Written by Marius Stanciu - Sergiu <marius@picozu.com>
  * Licensed under the GPL Version 3 license.
- * Version 1.1.0
+ * Version 1.1.1
  *
  */
 
@@ -18,7 +18,6 @@
             arrayEl: [],
             arrayActEl: 0,
             autoDetect: true,
-            ads: "",
             img: 1,
             iframe: false,
             inline: false,
@@ -230,27 +229,6 @@
                     twl = "https://twitter.com/share?url=" + window.location + "?cbox=" + c,
                     gpl = "https://plus.google.com/share?url=" + window.location + "?cbox=" + c;
             Panel.append("<div class='fb'><a href='" + n + "' target='_blank'>Facebook</a></div><div class='tw'><a href='" + twl + "' target='_blank'>Twitter</a></div><div class='gp'><a href='" + gpl + "' target='_blank'>Google plus</a></div>");
-        }
-        if (b.ads) {
-            _c.append("<div class='adss'><div class='qa'><div class='closeads'><a href='#'></a></div></div></div>");
-            Advert = _c.find(".adss");
-            $.ajax({
-                type: "GET",
-                url: b.ads,
-                data: '',
-                success: function(a) {
-                    Advert.find(".qa").append(a);
-                    Advert.find(".qa").css({
-                        height: Advert.find(".contentadv").height(),
-                        width: Advert.find(".contentadv").width(),
-                    });
-                }
-            });
-            $(".adss .closeads a").click(function() {
-                $(this).parents(".adss").remove();
-                return false
-            });
-            Advert.delay(800).fadeIn(210);
         }
     }
     function NextAndPrev(a) {
